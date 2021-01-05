@@ -1,0 +1,12 @@
+[
+  {
+    "id_doctor": 1,
+    "nombre": "Alba",
+    "apellidos": "Martín",
+    "dni": "Y3418112G",
+    "telefono": "638773415",
+    "email": "alba@correo.com",
+    "password": "Prueba1234$",
+    "tipo": "Medico"
+  }
+]

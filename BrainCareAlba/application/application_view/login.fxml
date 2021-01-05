@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="883.0" prefWidth="1303.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane layoutX="261.0" layoutY="199.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="550.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <GridPane BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="116.0" fitWidth="152.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../lib_images/logo.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" prefHeight="71.0" prefWidth="245.0" styleClass="forgetLabel" stylesheets="@../application_model/layout.css" text="Servicios" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="271.0" layoutY="66.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="245.0" styleClass="forgetLabel" stylesheets="@../application_model/layout.css" text="Inicio" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="532.0" layoutY="66.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="279.0" styleClass="forgetLabel" stylesheets="@../application_model/layout.css" text="Quienes Somos" GridPane.columnIndex="3">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="255.0" styleClass="forgetLabel" stylesheets="@../application_model/layout.css" text="Contacto" GridPane.columnIndex="4">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="parent" stylesheets="@../application_model/layout.css" GridPane.rowIndex="1">
+               <center>
+                  <GridPane BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="689.0" minWidth="10.0" prefWidth="103.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="806.0" minWidth="10.0" prefWidth="576.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="806.0" minWidth="10.0" prefWidth="576.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="689.0" minWidth="10.0" prefWidth="103.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <StackPane GridPane.columnIndex="2">
+                           <children>
+                              <Label text="Contraseña" GridPane.columnIndex="2">
+                                 <GridPane.margin>
+                                    <Insets bottom="90.0" left="50.0" />
+                                 </GridPane.margin>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <StackPane.margin>
+                                    <Insets bottom="90.0" right="320.0" />
+                                 </StackPane.margin>
+                              </Label>
+                              <PasswordField fx:id="contraseña" onMouseClicked="#campoPassDefecto" prefHeight="62.0" prefWidth="505.0" GridPane.columnIndex="2">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets left="50.0" right="150.0" />
+                                 </GridPane.margin>
+                                 <StackPane.margin>
+                                    <Insets left="50.0" right="50.0" />
+                                 </StackPane.margin>
+                              </PasswordField>
+                              <Label GridPane.columnIndex="2">
+                                 <graphic>
+                                    <ImageView fx:id="error" fitHeight="40.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@../../lib_images/puntoExclamacion.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <GridPane.margin>
+                                    <Insets left="350.0" />
+                                 </GridPane.margin>
+                                 <StackPane.margin>
+                                    <Insets left="350.0" />
+                                 </StackPane.margin>
+                              </Label>
+                           </children>
+                           <GridPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </GridPane.margin>
+                        </StackPane>
+                        <StackPane GridPane.columnIndex="1">
+                           <children>
+                              <Label text="Correo electronico">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <StackPane.margin>
+                                    <Insets bottom="90.0" right="260.0" />
+                                 </StackPane.margin>
+                              </Label>
+                              <TextField fx:id="email" onMouseClicked="#volverCampoDefecto" prefHeight="62.0" prefWidth="505.0" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="150.0" right="50.0" />
+                                 </GridPane.margin>
+                                 <StackPane.margin>
+                                    <Insets left="50.0" right="50.0" />
+                                 </StackPane.margin>
+                              </TextField>
+                              <Label>
+                                 <graphic>
+                                    <ImageView fx:id="errorCorreo" fitHeight="40.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@../../lib_images/puntoExclamacion.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <StackPane.margin>
+                                    <Insets left="350.0" />
+                                 </StackPane.margin>
+                              </Label>
+                           </children>
+                           <GridPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </GridPane.margin>
+                        </StackPane>
+                     </children>
+                  </GridPane>
+               </center>
+               <bottom>
+                  <GridPane BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="775.0" minWidth="10.0" prefWidth="148.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="775.0" minWidth="10.0" prefWidth="459.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="775.0" minWidth="0.0" prefWidth="161.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="775.0" minWidth="10.0" prefWidth="454.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="775.0" minWidth="10.0" prefWidth="148.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="300.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="volverAtras" mnemonicParsing="false" onAction="#volverInicio" prefHeight="70.0" prefWidth="250.0" styleClass="loginBtn" stylesheets="@../application_model/layout.css" text="Volver atrás" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                           <GridPane.margin>
+                              <Insets bottom="150.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="siguiente" mnemonicParsing="false" onAction="#validarUsuario" prefHeight="70.0" prefWidth="250.0" styleClass="loginBtn" stylesheets="@../application_model/layout.css" text="Siguiente" GridPane.columnIndex="3">
+                           <GridPane.margin>
+                              <Insets bottom="150.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Button>
+                        <Label styleClass="forgetLabel" stylesheets="@../application_model/layout.css" text="Olvidé mi contraseña" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                           <GridPane.margin>
+                              <Insets bottom="300.0" />
+                           </GridPane.margin>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </bottom>
+               <top>
+                  <Label prefHeight="69.0" prefWidth="366.0" text="Iniciar Sesión" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets top="50.0" />
+                     </BorderPane.margin>
+                     <font>
+                        <Font size="60.0" />
+                     </font>
+                  </Label>
+               </top>
+            </BorderPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

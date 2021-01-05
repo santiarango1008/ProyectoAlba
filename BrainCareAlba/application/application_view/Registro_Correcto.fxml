@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" styleClass="parent" stylesheets="@../application_model/layout.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Button fx:id="inicio" layoutX="151.0" layoutY="150.0" mnemonicParsing="false" onAction="#volverInicio" prefHeight="51.0" prefWidth="199.0" styleClass="loginBtn" stylesheets="@../../bin/application_model/layout.css" text="Volver Inicio">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Text layoutX="119.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario creado corectamente!">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
